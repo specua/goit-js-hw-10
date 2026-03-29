@@ -16,3 +16,215 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.home-main {
+  display: flex;
+  align-items: center;
+}
+
+.home-container,
+.task-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.home-title {
+  margin-bottom: 16px;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.home-text {
+  max-width: 520px;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.home-list {
+  display: grid;
+  gap: 16px;
+}
+
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 52px;
+  padding: 12px 20px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  color: #2e2f42;
+  font-size: 20px;
+  text-decoration: none;
+  transition:
+    border-color 250ms ease,
+    color 250ms ease;
+}
+
+.home-link:hover,
+.home-link:focus {
+  border-color: #4e75ff;
+  color: #4e75ff;
+}
+
+.task-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 8px;
+}
+
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  color: #2e2f42;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+#datetime-picker:hover {
+  border-color: #000000;
+}
+
+#datetime-picker:active,
+#datetime-picker:focus {
+  border-color: #4e75ff;
+  outline: none;
+}
+
+#datetime-picker:disabled {
+  border-color: #808080;
+  color: #808080;
+  background-color: #fafafa;
+}
+
+[data-start],
+.form button {
+  min-width: 75px;
+  height: 40px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+[data-start]:hover,
+[data-start]:focus,
+.form button:hover,
+.form button:focus {
+  background-color: #6c8cff;
+}
+
+[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: default;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 360px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e2f42;
+  letter-spacing: 0.04em;
+}
+
+.form input[name='delay'] {
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.form input[name='delay']:hover,
+.form-fieldset:hover {
+  border-color: #000000;
+}
+
+.form input[name='delay']:focus {
+  border-color: #4e75ff;
+  outline: none;
+}
+
+.form-fieldset {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin: 0;
+  padding: 24px 28px 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.form-fieldset legend {
+  padding: 0 4px;
+}
+
+.form-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form button {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .timer-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timer {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .form {
+    width: 100%;
+  }
+}

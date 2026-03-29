@@ -1,19 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>GoIT JS HW 10</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+    <main class="home-main">
+      <div class="container home-container">
+        <h1 class="home-title">Homework 10</h1>
+        <p class="home-text">
+          Open one of the exercises below to check the timer or the promise
+          generator.
+        </p>
+        <ul class="home-list">
+          <li>
+            <a class="home-link" href="./page-2.html"
+              >Task 1. Countdown timer</a
+            >
+          </li>
+          <li>
+            <a class="home-link" href="./page-3.html"
+              >Task 2. Promise generator</a
+            >
+          </li>
+        </ul>
+      </div>
     </main>
 
     <load src="./partials/footer.html" />
