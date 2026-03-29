@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Generator</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <load
+      src="./partials/header.html"
+      icon-path="./img/sprite.svg#logo"
+      highlight-curr="active"
+    />
+
+    <main>
+      <div class="container task-container">
+        <load src="./partials/back-link.html" />
+        <section class="task-section">
+          <form class="form">
+            <label class="form-label">
+              Delay (ms)
+              <input type="number" name="delay" required />
+            </label>
+
+            <fieldset class="form-fieldset">
+              <legend>State</legend>
+              <label class="form-radio">
+                <input type="radio" name="state" value="fulfilled" required />
+                Fulfilled
+              </label>
+              <label class="form-radio">
+                <input type="radio" name="state" value="rejected" required />
+                Rejected
+              </label>
+            </fieldset>
+
+            <button type="submit">Create notification</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <load src="./partials/footer.html" />
+    <script type="module" src="./2-snackbar.js"></script>
+  </body>
+</html>
